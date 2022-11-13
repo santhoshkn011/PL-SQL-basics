@@ -45,10 +45,16 @@ end;
 declare
     TYPE accNumberList IS TABLE OF NUMBER INDEX BY VARCHAR2(20); 
     accNumber accNumberList;
+    indexValue varchar2(50);
 begin
     accNumber('Varun') := 654647457;
     accNumber('Lokesh') := 948476474;
+    indexValue := accNumber.first;
     dbms_output.put_line(accNumber('Varun'));
+    for i in 1..accNumber.count
+    loop
+        dbms_output.put_line(indexValue);
+        indexValue := accNumber.next(indexValue);
+    end loop;
 end;
-
     
