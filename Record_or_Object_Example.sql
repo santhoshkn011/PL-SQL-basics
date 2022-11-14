@@ -31,21 +31,18 @@ END;
 
 --Row level Access
 DECLARE
-    type Bank_Account is RECORD(
-    accountNumber INTEGER,
-    name varchar2(20),
-    accountType varchar2(20)
+    type BankAccount_Details is RECORD(
+    customerName varchar2(20),
+    bankAccountNumber INTEGER
     );
     
-    BankAccountList Bank_Account;
+    BankAccountList BankAccount_Details;
 BEGIN
-    insert into Bank_Account(accountNumber, name, accountType) values(65238475, 'Aravind Nayak', 'Savings Account');
+    insert into BankAccount values('Aravind Nayak', 55454);
     commit;
-    select accountNumber, name, accountType into BankAccountList from Bank_Account where accountNumber=65238475;
+    select customerName, bankAccountNumber into BankAccountList from BankAccount where bankAccountNumber=55454;
       dbms_output.put_line('Bank Account Details:');
-      dbms_output.put_line('Account Number: '||BankAccountList.accountNumber);
-      dbms_output.put_line('Account Holder Name: '||BankAccountList.name);
-      dbms_output.put_line('Account Type: '||BankAccountList.accountType);
-      dbms_output.put_line('Account Type: '||BankAccountList.accountType);
+      dbms_output.put_line('Account Holder Name: '||BankAccountList.customerName);
+      dbms_output.put_line('Account Number: '||BankAccountList.bankAccountNumber);
 END;
     
