@@ -20,3 +20,10 @@ Day3: (Control Statements)
   4. If supplier_name field is IBM and the supplier_type field is Hardware, then the CASE statement will return to the North office.
      If the supplier_name field is IBM and the supplier_type is Software, the CASE statement will return to the South office.
   5. for loop to retrieve all the data from table using for and while loop
+
+Day4: (Functions and Cursors)
+  1. Write a sp for updating bank balance. if account balance is less than 3000, deduct 1000 rupees as redemption else  insert a balance of 1000 rupees.
+  2. Write a function to return count of account an user holds.
+  3. Write a function to get total sales of an employee.
+  4. Write a function to return count of account an user holds. with exception handling.
+  5. Cursor to insert and get data of an user from bank account.
