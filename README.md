@@ -27,3 +27,9 @@ Day4: (Functions and Cursors)
   3. Write a function to get total sales of an employee.
   4. Write a function to return count of account an user holds. with exception handling.
   5. Cursor to insert and get data of an user from bank account.
+
+Day5: (Transaction || Packages)
+  1. write a procedure that accepts a department ID and a salary percentage increase and gives everyone in that department a raise by the specified            percentage. using bulk collect and forall.
+  2. write a procedure to increase the salary and Fetch up to the number of rows specified. using limit clause.
+  3. create a package which consist of a procedure to add order, a cursor to return order details, a function to return net value of order and a function      return net value of custmer.
+  4. create an autonomous transaction to update bank details, alongwith main transaction to insert new bank account details with commit and rollback.
