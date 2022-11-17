@@ -33,3 +33,8 @@ Day5: (Transaction || Packages)
   2. write a procedure to increase the salary and Fetch up to the number of rows specified. using limit clause.
   3. create a package which consist of a procedure to add order, a cursor to return order details, a function to return net value of order and a function      return net value of custmer.
   4. create an autonomous transaction to update bank details, alongwith main transaction to insert new bank account details with commit and rollback.
+  
+Day5:
+  1. Write a nested block with transaction for update and insertion of new user in another block.
+  2. Use of Object type in fetching data from bank account.
+  3. implement dynamic sql in any above problem statements.
